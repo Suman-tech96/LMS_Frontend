@@ -164,6 +164,7 @@ a:not(.btn):not(.palette-btn):not(.footer-link):hover {
   color: var(--text-secondary);
   text-decoration: none;
   padding: 0.4rem 0;
+  white-space: nowrap;
   transition: color var(--transition-fast);
 }
 

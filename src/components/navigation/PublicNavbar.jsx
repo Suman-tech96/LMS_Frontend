@@ -93,7 +93,8 @@ export const PublicNavbar = () => {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '1.75rem',
+            gap: 'clamp(0.85rem, 1.5vw, 1.75rem)',
+            flexShrink: 0,
           }}
           className="desktop-nav"
         >
@@ -113,7 +114,9 @@ export const PublicNavbar = () => {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '0.75rem',
+            gap: 'clamp(0.5rem, 1vw, 0.75rem)',
+            flexShrink: 0,
+            whiteSpace: 'nowrap',
           }}
           className="desktop-auth"
         >
@@ -130,6 +133,8 @@ export const PublicNavbar = () => {
               color: 'var(--accent)',
               fontSize: '0.75rem',
               fontWeight: 600,
+              whiteSpace: 'nowrap',
+              flexShrink: 0,
             }}
           >
             <PhoneCall size={13} />
@@ -272,14 +277,14 @@ export const PublicNavbar = () => {
       )}
 
       <style>{`
-        @media (max-width: 1100px) {
+        @media (max-width: 1220px) {
           .helpline-pill { display: none !important; }
         }
-        @media (max-width: 960px) {
+        @media (max-width: 1024px) {
           .desktop-nav, .desktop-auth { display: none !important; }
           .mobile-menu-btn { display: inline-flex !important; }
         }
-        @media (max-width: 420px) {
+        @media (max-width: 480px) {
           .brand-subtitle { display: none !important; }
         }
       `}</style>
