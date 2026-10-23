@@ -190,21 +190,7 @@ export const ContactPage = () => {
               </div>
             </div>
 
-            <div
-              className="card"
-              style={{
-                backgroundColor: 'rgba(15, 23, 42, 0.5)',
-                borderColor: 'rgba(99, 102, 241, 0.2)',
-              }}
-            >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', color: 'var(--primary-light)' }}>
-                <Info size={18} />
-                <h4 style={{ fontSize: '0.95rem', margin: 0 }}>Backend Integration Notice</h4>
-              </div>
-              <p style={{ fontSize: '0.825rem', color: 'var(--text-secondary)', lineHeight: '1.6', margin: 0 }}>
-                This contact interface uses direct client-side email dispatch. The LMS backend API is dedicated exclusively to authenticated academic core services (authentication, course management, examinations, and results).
-              </p>
-            </div>
+           
           </div>
 
           {/* Right Column: Contact Form */}
